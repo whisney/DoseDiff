@@ -43,7 +43,7 @@ diffusion = SpacedDiffusion(use_timesteps=space_timesteps(args.T, 'ddim{}'.forma
                             loss_type=gd.LossType.MSE, rescale_timesteps=False)
 
 net = UNetModel_MS_Former(image_size=img_size, in_channels=1, ct_channels=1, dis_channels=dis_channels,
-                       model_channels=96, out_channels=1, num_res_blocks=2, attention_resolutions=(16, 32),
+                       model_channels=128, out_channels=1, num_res_blocks=2, attention_resolutions=(16, 32),
                        dropout=0,
                        channel_mult=(1, 1, 2, 3, 4), conv_resample=True, dims=2, num_classes=None,
                        use_checkpoint=False,
