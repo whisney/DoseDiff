@@ -13,3 +13,4 @@ This is the repository for the paper "DoseDiff: Distance-aware Diffusion Model f
 
 ## Training and evaluation on OpenKBP
 ### Data Preparation
+Download [OpenKBP challenge repository](https://github.com/ababier/open-kbp), and copy the data folder "provided-data" into this repository. 
