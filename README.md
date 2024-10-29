@@ -38,10 +38,14 @@ CUDA_VISIBLE_DEVICES=0 python pred.py --gpu 0 --bs 64 --model_path trained_model
 ## Citation
 if you find this repository useful in your research, please consider citing:
 ```
-@article{zhang2023dosediff,
-  title={DoseDiff: Distance-aware Diffusion Model for Dose Prediction in Radiotherapy},
+@ARTICLE{10486983,
   author={Zhang, Yiwen and Li, Chuanpu and Zhong, Liming and Chen, Zeli and Yang, Wei and Wang, Xuetao},
-  journal={arXiv preprint arXiv:2306.16324},
-  year={2023}
-}
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={DoseDiff: Distance-Aware Diffusion Model for Dose Prediction in Radiotherapy}, 
+  year={2024},
+  volume={43},
+  number={10},
+  pages={3621-3633},
+  keywords={Computed tomography;Predictive models;Planning;Biomedical imaging;Training;Radiation therapy;Noise reduction;Deep learning;diffusion model;dose prediction;radiotherapy;signed distance map},
+  doi={10.1109/TMI.2024.3383423}}
 ```
