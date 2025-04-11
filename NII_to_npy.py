@@ -28,9 +28,9 @@ for phase in ['train', 'validation', 'test']:
                 img = np.clip(img, 0, 80)
                 img = img / 40 - 1
 
-            for i in range(img.shape[2]):
-                mask_one = mask[:, :, i]
+            for i in range(img.shape[0]):
+                mask_one = mask[i, :, :]
                 if mask_one.max() > 0:
                     print(i)
-                    img_one = img[:, :, i]
+                    img_one = img[i, :, :]
                     np.save(os.path.join(save_dir, phase, name, '{}_{}.npy'.format(ID, i)), img_one)
